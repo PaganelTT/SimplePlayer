@@ -57,8 +57,8 @@ class PlayerControllerImpl(context: Context) : PlayerController {
             else -> if (isPlaying) PlayerState.PLAYING else PlayerState.PAUSED
         }
 
-    override fun addMediaItems(songs: List<BookChapterModel>) {
-        val mediaItems = songs.map {
+    override fun addMediaItems(chapters: List<BookChapterModel>) {
+        val mediaItems = chapters.map {
             MediaItem.Builder()
                 .setMediaId(it.uri)
                 .setUri(it.uri)

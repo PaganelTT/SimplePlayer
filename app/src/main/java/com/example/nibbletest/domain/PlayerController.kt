@@ -4,7 +4,7 @@ import kotlinx.coroutines.flow.MutableSharedFlow
 
 interface PlayerController {
 
-    fun addMediaItems(songs: List<BookChapterModel>)
+    fun addMediaItems(chapters: List<BookChapterModel>)
 
     fun play(mediaItemIndex: Int)
 
