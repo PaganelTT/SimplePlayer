@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Nibble Test</string>
+    <string name="speed_indicator">Speed x%1$s</string>
+    <string name="chapter_info">Key point %1$s of %2$s</string>
+</resources>
