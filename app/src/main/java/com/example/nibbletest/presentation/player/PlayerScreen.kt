@@ -46,8 +46,8 @@ import com.example.nibbletest.other.formatMilliseconds
 @Composable
 fun PlayerScreen(viewModel: PlayerScreenViewModel = viewModel(), modifier: Modifier = Modifier) {
 
-    LifecycleEventEffect(Lifecycle.Event.ON_START) {
-        viewModel.onStarted()
+    LifecycleEventEffect(Lifecycle.Event.ON_CREATE) {
+        viewModel.onCreated()
     }
 
     val uiState by viewModel.uiState.collectAsState()

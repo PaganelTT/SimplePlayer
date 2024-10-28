@@ -111,7 +111,8 @@ class PlayerScreenViewModel @Inject constructor(
         }
     }
 
-    fun onStarted() {
+    fun onCreated() {
+        //TODO load book by another action?
         loadBook()
     }
 
@@ -124,8 +125,4 @@ class PlayerScreenViewModel @Inject constructor(
         }
     }
 
-    override fun onCleared() {
-        playerController.destroy()
-        super.onCleared()
-    }
 }
